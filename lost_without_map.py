@@ -12,8 +12,14 @@ For the beginner, try to use the map method - it comes in very handy quite a lot
 
 # map(function_to_apply, list_of_inputs)
 
+"""
+# variation
 def maps(a):
-  doubled = list(map(lambda a: a**2, a))
+    return [2 * x for x in a]
+"""
+
+def maps(a):
+  doubled = list(map(lambda a: a*2, a))
   return doubled
   
 items = [1, 2, 3]

@@ -24,3 +24,38 @@ def in_asc_order(mylist):
   if False in a:
     return False
   return True
+
+# Best solution for this problem:
+'''
+#1.
+def in_asc_order(arr):
+    return arr == sorted(arr)
+    
+    
+#2.
+def in_asc_order(arr):
+    return sorted(arr) == arr
+    
+#3.
+def in_asc_order(arr):
+    for i in range(len(arr) - 1):
+        if arr[i] > arr[i + 1]: return False
+    return True
+    
+ #4.
+ in_asc_order = lambda l: sorted(l) == l
+ 
+ # 5
+ def in_asc_order(arr):
+    c=0
+    for x in arr:
+        if x<=c:
+            return False
+        c=x
+    return True   
+    
+   #6.
+   def in_asc_order(a):
+    return all(x < y for x, y in zip(a, a[1:]))
+    
+'''

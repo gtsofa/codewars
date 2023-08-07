@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C634ECBA2A81033800E27A7A /* challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634ECB92A81033800E27A7A /* challenge.swift */; };
+		C634ECC02A81092E00E27A7A /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634ECBF2A81092E00E27A7A /* FizzBuzzTests.swift */; };
 		C64FF68A2A80FF6C00AD48F9 /* fizzbuzz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64FF6812A80FF6B00AD48F9 /* fizzbuzz.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		C634ECB92A81033800E27A7A /* challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = challenge.swift; sourceTree = "<group>"; };
+		C634ECBF2A81092E00E27A7A /* FizzBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTests.swift; sourceTree = "<group>"; };
 		C64FF6812A80FF6B00AD48F9 /* fizzbuzz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = fizzbuzz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64FF6892A80FF6C00AD48F9 /* fizzbuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fizzbuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 		C64FF68D2A80FF6C00AD48F9 /* fizzbuzzTests */ = {
 			isa = PBXGroup;
 			children = (
+				C634ECBF2A81092E00E27A7A /* FizzBuzzTests.swift */,
 			);
 			path = fizzbuzzTests;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 					};
 					C64FF6882A80FF6C00AD48F9 = {
 						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C634ECC02A81092E00E27A7A /* FizzBuzzTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +401,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -403,6 +409,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gtsofa.com.fizzbuzzTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -411,6 +418,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

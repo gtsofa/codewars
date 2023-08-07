@@ -9,13 +9,20 @@ import XCTest
 
 class FizzBuzz {
     func evaluate(_ value: Int) -> String {
-        if value.isMultiple(of: 3) {
+        
+        
+        if (value.isMultiple(of: 3) && value.isMultiple(of: 5)) {
+            return "FizzBuzz"
+        }
+        if (value.isMultiple(of: 3)) {
             return "Fizz"
-        } else {
+            
+        } else if value.isMultiple(of: 5){
             
             return "Buzz"
         }
         
+        return "value"
     }
 }
 
@@ -24,7 +31,7 @@ final class FizzBuzzTests: XCTestCase {
     
     func test_evaluate_isMultipleOfThreeDeliversFizz() {
         
-        let samples = [3, 6, 9, 12, 15]
+        let samples = [3, 6, 9]
         
         samples.forEach { sample in
             expect(sut: makeSUT(), toDeliver: "Fizz", on: sample)
@@ -33,7 +40,11 @@ final class FizzBuzzTests: XCTestCase {
     
     func test_evaluate_isMultipleOfFiveDeliversBuzz() {
         
-        expect(sut: makeSUT(), toDeliver: "Buzz", on: 3)
+        expect(sut: makeSUT(), toDeliver: "Buzz", on: 10)
+    }
+    
+    func test_evaluate_isMultipleOfBothThreeAndFiveDeliversFizzBuzz() {
+        expect(sut: makeSUT(), toDeliver: "FizzBuzz", on: 15)
     }
     
     // MARK: - Helpers

@@ -12,6 +12,7 @@ class FizzBuzz {
         if value.isMultiple(of: 3) {
             return "Fizz"
         } else {
+            
             return "Buzz"
         }
         
@@ -26,16 +27,13 @@ final class FizzBuzzTests: XCTestCase {
         let samples = [3, 6, 9, 12, 15]
         
         samples.forEach { sample in
-           
-            XCTAssertEqual(makeSUT().evaluate(sample), "Fizz", "on sample \(sample)")
+            expect(sut: makeSUT(), toDeliver: "Fizz", on: sample)
         }
     }
     
     func test_evaluate_isMultipleOfFiveDeliversBuzz() {
         
-        let result = makeSUT().evaluate(4)
-        
-        XCTAssertEqual(result, "Buzz")
+        expect(sut: makeSUT(), toDeliver: "Buzz", on: 3)
     }
     
     // MARK: - Helpers
@@ -43,6 +41,12 @@ final class FizzBuzzTests: XCTestCase {
     func makeSUT() -> FizzBuzz {
         let sut = FizzBuzz()
         return sut
+    }
+    
+    func expect(sut: FizzBuzz, toDeliver expectedResult: String, on value: Int, file: StaticString = #filePath, line: UInt = #line) {
+        let receivedResult = sut.evaluate(value)
+        
+        XCTAssertEqual(expectedResult, receivedResult, "on value \(value)", file: file, line: line)
     }
 
 }

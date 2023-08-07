@@ -40,7 +40,12 @@ final class FizzBuzzTests: XCTestCase {
     
     func test_evaluate_isMultipleOfFiveDeliversBuzz() {
         
-        expect(sut: makeSUT(), toDeliver: "Buzz", on: 10)
+        let samples = [5, 10, 20]
+        
+        samples.forEach { sample in
+            expect(sut: makeSUT(), toDeliver: "Buzz", on:sample)
+        }
+        
     }
     
     func test_evaluate_isMultipleOfBothThreeAndFiveDeliversFizzBuzz() {

@@ -9,10 +9,10 @@ import XCTest
 
 class FizzBuzz {
     func evaluate(_ value: Int) -> String {
-        if value % 3 == 0 {
+        if value.isMultiple(of: 3) {
             return "Fizz"
         } else {
-            return ""
+            return "Buzz"
         }
         
     }
@@ -31,6 +31,14 @@ final class FizzBuzzTests: XCTestCase {
             
             XCTAssertEqual(result, "Fizz", "on sample \(sample)")
         }
+    }
+    
+    func test_evaluate_isMultipleOfFiveDeliversBuzz() {
+        let sut = FizzBuzz()
+        
+        let result = sut.evaluate(4)
+        
+        XCTAssertEqual(result, "Buzz")
     }
 
 }

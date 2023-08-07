@@ -21,7 +21,7 @@ class FizzBuzz {
 
 final class FizzBuzzTests: XCTestCase {
     
-    func test() {
+    func test_evaluate_isMultipleOfThreeDeliversFizz() {
         let sut = FizzBuzz()
         XCTAssertEqual(sut.evaluate(3), "Fizz")
     }

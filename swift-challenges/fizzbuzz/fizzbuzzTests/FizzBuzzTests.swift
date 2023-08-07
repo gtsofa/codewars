@@ -22,7 +22,7 @@ class FizzBuzz {
             return "Buzz"
         }
         
-        return "value"
+        return String(value)
     }
 }
 
@@ -45,6 +45,16 @@ final class FizzBuzzTests: XCTestCase {
     
     func test_evaluate_isMultipleOfBothThreeAndFiveDeliversFizzBuzz() {
         expect(sut: makeSUT(), toDeliver: "FizzBuzz", on: 15)
+    }
+    
+    func test_evaluate_onNonMultipleOfThreeAndFiveDeliversIntegerInStringForm() {
+        let samples = [2, 4, 7, 13]
+        
+        samples.forEach { sample in
+            expect(sut: makeSUT(), toDeliver: String(sample), on: sample)
+        }
+        
+        
     }
     
     // MARK: - Helpers

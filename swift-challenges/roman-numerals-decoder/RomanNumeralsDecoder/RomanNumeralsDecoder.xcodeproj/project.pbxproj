@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C6FDCAFA2C6FD05C00B77B47 /* RomanNumeralsDecoder.docc in Sources */ = {isa = PBXBuildFile; fileRef = C6FDCAF92C6FD05C00B77B47 /* RomanNumeralsDecoder.docc */; };
 		C6FDCB002C6FD05D00B77B47 /* RomanNumeralsDecoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FDCAF52C6FD05C00B77B47 /* RomanNumeralsDecoder.framework */; };
-		C6FDCB052C6FD05D00B77B47 /* RomanNumeralsDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FDCB042C6FD05D00B77B47 /* RomanNumeralsDecoderTests.swift */; };
-		C6FDCB062C6FD05D00B77B47 /* RomanNumeralsDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C6FDCAF82C6FD05C00B77B47 /* RomanNumeralsDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,10 +22,7 @@
 
 /* Begin PBXFileReference section */
 		C6FDCAF52C6FD05C00B77B47 /* RomanNumeralsDecoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RomanNumeralsDecoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6FDCAF82C6FD05C00B77B47 /* RomanNumeralsDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RomanNumeralsDecoder.h; sourceTree = "<group>"; };
-		C6FDCAF92C6FD05C00B77B47 /* RomanNumeralsDecoder.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = RomanNumeralsDecoder.docc; sourceTree = "<group>"; };
 		C6FDCAFF2C6FD05D00B77B47 /* RomanNumeralsDecoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomanNumeralsDecoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6FDCB042C6FD05D00B77B47 /* RomanNumeralsDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanNumeralsDecoderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +65,6 @@
 		C6FDCAF72C6FD05C00B77B47 /* RomanNumeralsDecoder */ = {
 			isa = PBXGroup;
 			children = (
-				C6FDCAF82C6FD05C00B77B47 /* RomanNumeralsDecoder.h */,
-				C6FDCAF92C6FD05C00B77B47 /* RomanNumeralsDecoder.docc */,
 			);
 			path = RomanNumeralsDecoder;
 			sourceTree = "<group>";
@@ -80,7 +72,6 @@
 		C6FDCB032C6FD05D00B77B47 /* RomanNumeralsDecoderTests */ = {
 			isa = PBXGroup;
 			children = (
-				C6FDCB042C6FD05D00B77B47 /* RomanNumeralsDecoderTests.swift */,
 			);
 			path = RomanNumeralsDecoderTests;
 			sourceTree = "<group>";
@@ -92,7 +83,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6FDCB062C6FD05D00B77B47 /* RomanNumeralsDecoder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +184,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6FDCAFA2C6FD05C00B77B47 /* RomanNumeralsDecoder.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +191,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6FDCB052C6FD05D00B77B47 /* RomanNumeralsDecoderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C6FDCB002C6FD05D00B77B47 /* RomanNumeralsDecoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FDCAF52C6FD05C00B77B47 /* RomanNumeralsDecoder.framework */; };
+		C6FDCB102C6FD18300B77B47 /* SolutionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FDCB0F2C6FD18300B77B47 /* SolutionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		C6FDCAF52C6FD05C00B77B47 /* RomanNumeralsDecoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RomanNumeralsDecoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FDCAFF2C6FD05D00B77B47 /* RomanNumeralsDecoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomanNumeralsDecoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6FDCB0F2C6FD18300B77B47 /* SolutionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		C6FDCB032C6FD05D00B77B47 /* RomanNumeralsDecoderTests */ = {
 			isa = PBXGroup;
 			children = (
+				C6FDCB0F2C6FD18300B77B47 /* SolutionTests.swift */,
 			);
 			path = RomanNumeralsDecoderTests;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 					};
 					C6FDCAFE2C6FD05D00B77B47 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -191,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6FDCB102C6FD18300B77B47 /* SolutionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +397,7 @@
 		C6FDCB0D2C6FD05D00B77B47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -399,6 +405,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gtsofa.com.RomanNumeralsDecoderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -406,6 +413,7 @@
 		C6FDCB0E2C6FD05D00B77B47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

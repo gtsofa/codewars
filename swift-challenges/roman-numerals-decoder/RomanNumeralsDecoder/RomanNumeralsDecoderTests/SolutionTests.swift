@@ -35,7 +35,7 @@ class Solution {
 }
 
 final class SolutionTests: XCTestCase {
-    func test_OneThroughTen() {
+    func test_solution_deliversDecodedNumbersFromOneThroughTen() {
         let sut = Solution()
         XCTAssertEqual(sut.solution("I"), 1)
         XCTAssertEqual(sut.solution("II"), 2)

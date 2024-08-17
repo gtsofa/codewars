@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class TriangularTreasure {
+/*public final class TriangularTreasure {
     public init() {}
     
     public func triangular(_ n: Int) -> Int  {
@@ -16,7 +16,7 @@ public final class TriangularTreasure {
         }
         return n * (n + 1) / 2
     }
-}
+}*/
 
 // #Question statement
 // Triangular numbers are so called because of the equilateral triangular shape that they occupy when laid out as dots. i.e.
@@ -27,3 +27,21 @@ public final class TriangularTreasure {
 Triangular Numbers: The nth triangular number can be calculated using the formula n * (n + 1) / 2.
 Out-of-Range Handling: If n is less than or equal to 0, the function returns 0 since there are no triangular numbers for those values.
 This code will correctly return the nth triangular number or 0 for invalid inputs.*/
+
+// #version 1
+
+public final class TriangularTreasure {
+    public init() {}
+    
+    public func triangular(_ n: Int) -> Int  {
+        var total = 0
+        if (n > 0) {
+            for element in 1...n {
+                total += element
+            }
+        }
+        
+        return total
+    }
+}
+

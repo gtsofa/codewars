@@ -11,7 +11,7 @@ class TriangularTreasure {
         guard n > 0 else {
             return 0
         }
-        return 1
+        return n * (n + 1) / 2
     }
 }
 // Triangular numbers are so called because of the equilateral triangular shape that they occupy when laid out as dots. i.e.
@@ -25,6 +25,12 @@ final class TriangularTreasureTests: XCTestCase {
     func test_triangular_checksOutOfRangeValues() {
         let sut = TriangularTreasure()
         XCTAssertEqual(sut.triangular(-10), 0)
+    }
+    
+    func test_triangular_calculatesNthTriangularNumber() {
+        let sut = TriangularTreasure()
+        
+        XCTAssertEqual(sut.triangular(2), 3)
     }
 
 }

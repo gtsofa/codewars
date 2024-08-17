@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C6529A3D2C7124DB00385B11 /* Triangular_treasure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6529A322C7124DA00385B11 /* Triangular_treasure.framework */; };
 		C6529A4D2C7125BC00385B11 /* TriangularTreasureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6529A4C2C7125BC00385B11 /* TriangularTreasureTests.swift */; };
+		C6529A4F2C712D4F00385B11 /* TriangularTreasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6529A4E2C712D4F00385B11 /* TriangularTreasure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +26,7 @@
 		C6529A322C7124DA00385B11 /* Triangular_treasure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Triangular_treasure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6529A3C2C7124DB00385B11 /* Triangular-treasureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Triangular-treasureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6529A4C2C7125BC00385B11 /* TriangularTreasureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangularTreasureTests.swift; sourceTree = "<group>"; };
+		C6529A4E2C712D4F00385B11 /* TriangularTreasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangularTreasure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		C6529A342C7124DA00385B11 /* Triangular-treasure */ = {
 			isa = PBXGroup;
 			children = (
+				C6529A4E2C712D4F00385B11 /* TriangularTreasure.swift */,
 			);
 			path = "Triangular-treasure";
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				TargetAttributes = {
 					C6529A312C7124DA00385B11 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 					C6529A3B2C7124DB00385B11 = {
 						CreatedOnToolsVersion = 15.2;
@@ -188,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6529A4F2C712D4F00385B11 /* TriangularTreasure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +342,7 @@
 		C6529A472C7124DB00385B11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -360,6 +366,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -367,6 +374,7 @@
 		C6529A482C7124DB00385B11 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -397,6 +405,7 @@
 		C6529A4A2C7124DB00385B11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -413,6 +422,7 @@
 		C6529A4B2C7124DB00385B11 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

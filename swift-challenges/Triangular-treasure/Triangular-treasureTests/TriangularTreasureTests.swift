@@ -31,6 +31,8 @@ final class TriangularTreasureTests: XCTestCase {
         let sut = TriangularTreasure()
         
         XCTAssertEqual(sut.triangular(2), 3)
+        XCTAssertEqual(sut.triangular(3), 6)
+        XCTAssertEqual(sut.triangular(-5), 0)
     }
 
 }

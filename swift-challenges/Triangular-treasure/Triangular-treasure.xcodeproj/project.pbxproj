@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C6529A3D2C7124DB00385B11 /* Triangular_treasure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6529A322C7124DA00385B11 /* Triangular_treasure.framework */; };
+		C6529A4D2C7125BC00385B11 /* TriangularTreasureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6529A4C2C7125BC00385B11 /* TriangularTreasureTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		C6529A322C7124DA00385B11 /* Triangular_treasure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Triangular_treasure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6529A3C2C7124DB00385B11 /* Triangular-treasureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Triangular-treasureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6529A4C2C7125BC00385B11 /* TriangularTreasureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangularTreasureTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		C6529A402C7124DB00385B11 /* Triangular-treasureTests */ = {
 			isa = PBXGroup;
 			children = (
+				C6529A4C2C7125BC00385B11 /* TriangularTreasureTests.swift */,
 			);
 			path = "Triangular-treasureTests";
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 					};
 					C6529A3B2C7124DB00385B11 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -191,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6529A4D2C7125BC00385B11 /* TriangularTreasureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +397,7 @@
 		C6529A4A2C7124DB00385B11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -399,6 +405,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "gtsofa.com.Triangular-treasureTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -406,6 +413,7 @@
 		C6529A4B2C7124DB00385B11 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

@@ -8,6 +8,9 @@
 import XCTest
 class TriangularTreasure {
     func triangular(_ n: Int) -> Int  {
+        guard n > 0 else {
+            return 0
+        }
         return 1
     }
 }
@@ -17,6 +20,11 @@ final class TriangularTreasureTests: XCTestCase {
     func test() {
         let sut = TriangularTreasure()
         XCTAssertEqual(sut.triangular(1), 1)
+    }
+    
+    func test_triangular_checksOutOfRangeValues() {
+        let sut = TriangularTreasure()
+        XCTAssertEqual(sut.triangular(-10), 0)
     }
 
 }

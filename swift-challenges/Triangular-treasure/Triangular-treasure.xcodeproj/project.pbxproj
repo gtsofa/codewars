@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C6529A372C7124DA00385B11 /* Triangular_treasure.docc in Sources */ = {isa = PBXBuildFile; fileRef = C6529A362C7124DA00385B11 /* Triangular_treasure.docc */; };
 		C6529A3D2C7124DB00385B11 /* Triangular_treasure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6529A322C7124DA00385B11 /* Triangular_treasure.framework */; };
-		C6529A422C7124DB00385B11 /* Triangular_treasureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6529A412C7124DB00385B11 /* Triangular_treasureTests.swift */; };
-		C6529A432C7124DB00385B11 /* Triangular_treasure.h in Headers */ = {isa = PBXBuildFile; fileRef = C6529A352C7124DA00385B11 /* Triangular_treasure.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,10 +22,7 @@
 
 /* Begin PBXFileReference section */
 		C6529A322C7124DA00385B11 /* Triangular_treasure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Triangular_treasure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6529A352C7124DA00385B11 /* Triangular_treasure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Triangular_treasure.h; sourceTree = "<group>"; };
-		C6529A362C7124DA00385B11 /* Triangular_treasure.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Triangular_treasure.docc; sourceTree = "<group>"; };
 		C6529A3C2C7124DB00385B11 /* Triangular-treasureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Triangular-treasureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6529A412C7124DB00385B11 /* Triangular_treasureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangular_treasureTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +65,6 @@
 		C6529A342C7124DA00385B11 /* Triangular-treasure */ = {
 			isa = PBXGroup;
 			children = (
-				C6529A352C7124DA00385B11 /* Triangular_treasure.h */,
-				C6529A362C7124DA00385B11 /* Triangular_treasure.docc */,
 			);
 			path = "Triangular-treasure";
 			sourceTree = "<group>";
@@ -80,7 +72,6 @@
 		C6529A402C7124DB00385B11 /* Triangular-treasureTests */ = {
 			isa = PBXGroup;
 			children = (
-				C6529A412C7124DB00385B11 /* Triangular_treasureTests.swift */,
 			);
 			path = "Triangular-treasureTests";
 			sourceTree = "<group>";
@@ -92,7 +83,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6529A432C7124DB00385B11 /* Triangular_treasure.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +184,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6529A372C7124DA00385B11 /* Triangular_treasure.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +191,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6529A422C7124DB00385B11 /* Triangular_treasureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

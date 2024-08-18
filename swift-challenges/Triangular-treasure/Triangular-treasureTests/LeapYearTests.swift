@@ -22,6 +22,9 @@ final class LeapYearTests: XCTestCase {
     func test_year_onYearDivisibleBy4ReturnsTrue() {
         let sut = LeapYear()
         XCTAssertTrue(sut.isLeapYear(1600))
+        XCTAssertEqual(sut.isLeapYear(2020), true)
+        XCTAssertEqual(sut.isLeapYear(2000), true)
+        XCTAssertEqual(sut.isLeapYear(2020), true)
     }
 
 }

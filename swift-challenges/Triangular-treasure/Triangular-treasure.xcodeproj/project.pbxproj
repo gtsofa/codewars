@@ -10,6 +10,7 @@
 		C6529A3D2C7124DB00385B11 /* Triangular_treasure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6529A322C7124DA00385B11 /* Triangular_treasure.framework */; };
 		C6529A4D2C7125BC00385B11 /* TriangularTreasureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6529A4C2C7125BC00385B11 /* TriangularTreasureTests.swift */; };
 		C6529A4F2C712D4F00385B11 /* TriangularTreasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6529A4E2C712D4F00385B11 /* TriangularTreasure.swift */; };
+		C6529A512C71322C00385B11 /* LeapYearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6529A502C71322C00385B11 /* LeapYearTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 		C6529A3C2C7124DB00385B11 /* Triangular-treasureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Triangular-treasureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6529A4C2C7125BC00385B11 /* TriangularTreasureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangularTreasureTests.swift; sourceTree = "<group>"; };
 		C6529A4E2C712D4F00385B11 /* TriangularTreasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangularTreasure.swift; sourceTree = "<group>"; };
+		C6529A502C71322C00385B11 /* LeapYearTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeapYearTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				C6529A4C2C7125BC00385B11 /* TriangularTreasureTests.swift */,
+				C6529A502C71322C00385B11 /* LeapYearTests.swift */,
 			);
 			path = "Triangular-treasureTests";
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6529A512C71322C00385B11 /* LeapYearTests.swift in Sources */,
 				C6529A4D2C7125BC00385B11 /* TriangularTreasureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

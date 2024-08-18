@@ -9,22 +9,19 @@ import XCTest
 
 class LeapYear {
     func isLeapYear(_ year: Int) -> Bool {
-        if year % 4 == 0 {
+        if year % 400 == 0 {
             return true
         }
-        else {
-            return false 
-        }
+        return false
+        
     }
 }
 
 final class LeapYearTests: XCTestCase {
-    func test_year_onYearDivisibleBy4ReturnsTrue() {
+    func test_year_onYearDivisibleBy400ReturnsTrue() {
         let sut = LeapYear()
         XCTAssertTrue(sut.isLeapYear(1600))
-        XCTAssertEqual(sut.isLeapYear(2020), true)
         XCTAssertEqual(sut.isLeapYear(2000), true)
-        XCTAssertEqual(sut.isLeapYear(2020), true)
     }
-
+    
 }

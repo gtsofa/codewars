@@ -6,15 +6,8 @@
 //
 
 import XCTest
+import Triangular_treasure
 
-class LeapYear {
-    func isLeapYear(_ year: Int) -> Bool {
-        guard year % 4 == 0 else { return false }
-        guard year % 100 == 0 else { return true }
-        guard year % 400 == 0 else { return false }
-        return true
-    }
-}
 
 final class LeapYearTests: XCTestCase {
     func test_year_onYearDivisibleBy400ReturnsTrue() {

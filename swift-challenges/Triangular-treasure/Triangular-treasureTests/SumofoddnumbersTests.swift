@@ -6,12 +6,7 @@
 //
 
 import XCTest
-
-class Sumofoddnumbers {
-    func sumOddNumbers(_ row: Int) -> Int {
-        return row * row * row
-    }
-}
+import Triangular_treasure
 
 final class SumofoddnumbersTests: XCTestCase {
     func test_sumOddNumbers_deliversCorrectResults() {

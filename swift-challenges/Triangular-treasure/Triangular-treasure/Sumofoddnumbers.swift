@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+public class Sumofoddnumbers {
+    public init() {}
+    
+    public func sumOddNumbers(_ row: Int) -> Int {
+        return row * row * row
+    }
+}

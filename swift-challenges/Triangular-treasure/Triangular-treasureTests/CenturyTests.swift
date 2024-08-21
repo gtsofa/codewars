@@ -22,6 +22,10 @@ final class CenturyTests: XCTestCase {
         let sut = Century()
         
         XCTAssertEqual(sut.whatCentury("1901"), "20")
+        XCTAssertEqual(sut.whatCentury("1999"), "20")
+        XCTAssertEqual(sut.whatCentury("2011"), "21")
+        XCTAssertEqual(sut.whatCentury("2154"), "22")
+        XCTAssertEqual(sut.whatCentury("2259"), "23")
     }
 
 }

@@ -18,7 +18,7 @@ public class Century {
 }
 
 final class CenturyTests: XCTestCase {
-    func test() {
+    func test_whatCentury_returnsTheCenturyOfInputYear() {
         let sut = Century()
         
         XCTAssertEqual(sut.whatCentury("1901"), "20")

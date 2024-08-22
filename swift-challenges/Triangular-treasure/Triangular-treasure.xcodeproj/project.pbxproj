@@ -18,6 +18,7 @@
 		C6529A5B2C7686C800385B11 /* ShortestWordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6529A5A2C7686C700385B11 /* ShortestWordTests.swift */; };
 		C6529A5D2C7690FE00385B11 /* ShortestWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6529A5C2C7690FE00385B11 /* ShortestWord.swift */; };
 		C6529A5F2C7691BA00385B11 /* CenturyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6529A5E2C7691BA00385B11 /* CenturyTests.swift */; };
+		C6529A612C77DA5000385B11 /* PlayingwithdigitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6529A602C77DA5000385B11 /* PlayingwithdigitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		C6529A5A2C7686C700385B11 /* ShortestWordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestWordTests.swift; sourceTree = "<group>"; };
 		C6529A5C2C7690FE00385B11 /* ShortestWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestWord.swift; sourceTree = "<group>"; };
 		C6529A5E2C7691BA00385B11 /* CenturyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenturyTests.swift; sourceTree = "<group>"; };
+		C6529A602C77DA5000385B11 /* PlayingwithdigitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingwithdigitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				C6529A582C75458500385B11 /* FactorialTests.swift */,
 				C6529A5A2C7686C700385B11 /* ShortestWordTests.swift */,
 				C6529A5E2C7691BA00385B11 /* CenturyTests.swift */,
+				C6529A602C77DA5000385B11 /* PlayingwithdigitTests.swift */,
 			);
 			path = "Triangular-treasureTests";
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				C6529A4D2C7125BC00385B11 /* TriangularTreasureTests.swift in Sources */,
 				C6529A5B2C7686C800385B11 /* ShortestWordTests.swift in Sources */,
 				C6529A5F2C7691BA00385B11 /* CenturyTests.swift in Sources */,
+				C6529A612C77DA5000385B11 /* PlayingwithdigitTests.swift in Sources */,
 				C6529A592C75458500385B11 /* FactorialTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

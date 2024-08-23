@@ -14,4 +14,11 @@ final class BinarySearchTests: XCTestCase {
         let my_list = [1, 3, 5, 7, 9]
         XCTAssertEqual(sut.binary_search(list: my_list, item: 6), nil)
     }
+    
+    func test_binarySearch_returnsNilWhenGuessNotFound() {
+        let sut = BinarySearch()
+        let myList = [1, 3, 5, 7, 9]
+        
+        XCTAssertEqual(sut.binary_search(list: myList, item: -1), nil)
+    }
 }

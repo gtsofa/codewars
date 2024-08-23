@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C64F622E2C791C7C00B428A3 /* BinarySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F622D2C791C7C00B428A3 /* BinarySearchTests.swift */; };
+		C64F62302C791CD600B428A3 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F622F2C791CD600B428A3 /* BinarySearch.swift */; };
 		C6529A3D2C7124DB00385B11 /* Triangular_treasure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6529A322C7124DA00385B11 /* Triangular_treasure.framework */; };
 		C6529A4D2C7125BC00385B11 /* TriangularTreasureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6529A4C2C7125BC00385B11 /* TriangularTreasureTests.swift */; };
 		C6529A4F2C712D4F00385B11 /* TriangularTreasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6529A4E2C712D4F00385B11 /* TriangularTreasure.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C64F622D2C791C7C00B428A3 /* BinarySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTests.swift; sourceTree = "<group>"; };
+		C64F622F2C791CD600B428A3 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		C6529A322C7124DA00385B11 /* Triangular_treasure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Triangular_treasure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6529A3C2C7124DB00385B11 /* Triangular-treasureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Triangular-treasureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6529A4C2C7125BC00385B11 /* TriangularTreasureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangularTreasureTests.swift; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 				C6529A5C2C7690FE00385B11 /* ShortestWord.swift */,
 				C6529A622C77E19200385B11 /* Playingwithdigit.swift */,
 				C6529A642C77E32300385B11 /* Century.swift */,
+				C64F622F2C791CD600B428A3 /* BinarySearch.swift */,
 			);
 			path = "Triangular-treasure";
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 				C6529A5A2C7686C700385B11 /* ShortestWordTests.swift */,
 				C6529A5E2C7691BA00385B11 /* CenturyTests.swift */,
 				C6529A602C77DA5000385B11 /* PlayingwithdigitTests.swift */,
+				C64F622D2C791C7C00B428A3 /* BinarySearchTests.swift */,
 			);
 			path = "Triangular-treasureTests";
 			sourceTree = "<group>";
@@ -229,6 +235,7 @@
 				C6529A4F2C712D4F00385B11 /* TriangularTreasure.swift in Sources */,
 				C6529A5D2C7690FE00385B11 /* ShortestWord.swift in Sources */,
 				C6529A632C77E19200385B11 /* Playingwithdigit.swift in Sources */,
+				C64F62302C791CD600B428A3 /* BinarySearch.swift in Sources */,
 				C6529A572C753E1B00385B11 /* LeapYear.swift in Sources */,
 				C6529A552C753CDE00385B11 /* Sumofoddnumbers.swift in Sources */,
 			);
@@ -238,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C64F622E2C791C7C00B428A3 /* BinarySearchTests.swift in Sources */,
 				C6529A532C7534CC00385B11 /* SumofoddnumbersTests.swift in Sources */,
 				C6529A512C71322C00385B11 /* LeapYearTests.swift in Sources */,
 				C6529A4D2C7125BC00385B11 /* TriangularTreasureTests.swift in Sources */,

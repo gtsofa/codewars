@@ -38,6 +38,7 @@
 /* Begin PBXFileReference section */
 		C64F622D2C791C7C00B428A3 /* BinarySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTests.swift; sourceTree = "<group>"; };
 		C64F622F2C791CD600B428A3 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		C64F62342C7921B900B428A3 /* BinarySearchNotess.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = BinarySearchNotess.md; sourceTree = "<group>"; };
 		C6529A322C7124DA00385B11 /* Triangular_treasure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Triangular_treasure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6529A3C2C7124DB00385B11 /* Triangular-treasureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Triangular-treasureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6529A4C2C7125BC00385B11 /* TriangularTreasureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangularTreasureTests.swift; sourceTree = "<group>"; };
@@ -78,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				C64F622F2C791CD600B428A3 /* BinarySearch.swift */,
+				C64F62342C7921B900B428A3 /* BinarySearchNotess.md */,
 			);
 			path = "Binary Search";
 			sourceTree = "<group>";

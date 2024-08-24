@@ -6,3 +6,33 @@
 //
 
 import Foundation
+
+public class SelectionSort {
+    public init() {}
+    
+    public func findSmallest(_ arr: [Int]) -> Int {
+        var smallestElement = arr[0]
+        var smallestIndex = 0
+        
+        for (i, element) in arr.enumerated() {
+            if element < smallestElement {
+                smallestElement = element
+                smallestIndex = i
+            }
+        }
+        return smallestIndex
+    }
+    
+    public func selectionSort(_ arr: [Int]) -> [Int] {
+        var arr = arr
+        var sortedArray: [Int] = []
+        
+        for _ in 0..<arr.count {
+            let smallestIndex = findSmallest(arr)
+            sortedArray.append(arr.remove(at: smallestIndex))
+        }
+        
+        return sortedArray
+        
+    }
+}

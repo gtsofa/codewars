@@ -22,6 +22,19 @@ public class SelectionSort {
         }
         return smallestIndex
     }
+    
+    public func selectionSort(_ arr: [Int]) -> [Int] {
+        var arr = arr
+        var sortedArray: [Int] = []
+        
+        for _ in 0..<arr.count {
+            let smallestIndex = findSmallest(arr)
+            sortedArray.append(arr.remove(at: smallestIndex))
+        }
+        
+        return sortedArray
+        
+    }
 }
 
 final class SelectionSortTests: XCTestCase {
@@ -30,7 +43,13 @@ final class SelectionSortTests: XCTestCase {
         let inputArray = [5, 3, 6, 2, 10]
         
         XCTAssertEqual(sut.findSmallest(inputArray), 3)
-        //XCTAssertEqual(sut.selectionSort(unsortedList), sortedList)
     }
-
+    
+    func test_selectionSort_sortsGivenArray() {
+        let sut = SelectionSort()
+        let unsortedList = [5, 3, 6, 2, 10]
+        let sortedList = unsortedList.sorted()
+        
+        XCTAssertEqual(sut.selectionSort(unsortedList), sortedList)
+    }
 }

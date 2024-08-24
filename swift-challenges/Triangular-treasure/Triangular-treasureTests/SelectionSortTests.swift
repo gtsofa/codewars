@@ -7,29 +7,30 @@
 
 import XCTest
 
-final class SelectionSortTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+public class SelectionSort {
+    public init() {}
+    
+    public func findSmallest(_ arr: [Int]) -> Int {
+        var smallestElement = arr[0]
+        var smallestIndex = 0
+        
+        for (i, element) in arr.enumerated() {
+            if element < smallestElement {
+                smallestElement = element
+                smallestIndex = i
+            }
         }
+        return smallestIndex
+    }
+}
+
+final class SelectionSortTests: XCTestCase {
+    func test_findSmallest_returnsCorrectIndexOfTheSmallestElement() {
+        let sut = SelectionSort()
+        let inputArray = [5, 3, 6, 2, 10]
+        
+        XCTAssertEqual(sut.findSmallest(inputArray), 3)
+        //XCTAssertEqual(sut.selectionSort(unsortedList), sortedList)
     }
 
 }

@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+public class Recursion {
+    public init() {}
+    
+    public func fact(_ number: Int) -> Int {
+        if number == 1 {
+            return 1
+        } else {
+            return number * fact(number - 1)
+        }
+    }
+}

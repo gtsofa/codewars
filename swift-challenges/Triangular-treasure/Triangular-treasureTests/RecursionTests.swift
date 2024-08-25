@@ -6,16 +6,7 @@
 //
 
 import XCTest
-
-public class Recursion {
-    func fact(_ number: Int) -> Int {
-        if number == 1 {
-            return 1
-        } else {
-            return number * fact(number - 1)
-        }
-    }
-}
+import Triangular_treasure
 
 final class RecursionTests: XCTestCase {
     func test_fact_returnsCorrectFactoriaValue() {

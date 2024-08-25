@@ -11,6 +11,7 @@
 		C64F62302C791CD600B428A3 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F622F2C791CD600B428A3 /* BinarySearch.swift */; };
 		C64F62362C7A0D4B00B428A3 /* SelectionSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F62352C7A0D4B00B428A3 /* SelectionSortTests.swift */; };
 		C64F62382C7A1CBD00B428A3 /* SelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F62372C7A1CBD00B428A3 /* SelectionSort.swift */; };
+		C64F623A2C7BB3C600B428A3 /* RecursionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F62392C7BB3C600B428A3 /* RecursionTests.swift */; };
 		C6529A3D2C7124DB00385B11 /* Triangular_treasure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6529A322C7124DA00385B11 /* Triangular_treasure.framework */; };
 		C6529A4D2C7125BC00385B11 /* TriangularTreasureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6529A4C2C7125BC00385B11 /* TriangularTreasureTests.swift */; };
 		C6529A4F2C712D4F00385B11 /* TriangularTreasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6529A4E2C712D4F00385B11 /* TriangularTreasure.swift */; };
@@ -43,6 +44,7 @@
 		C64F62342C7921B900B428A3 /* BinarySearchNotess.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = BinarySearchNotess.md; sourceTree = "<group>"; };
 		C64F62352C7A0D4B00B428A3 /* SelectionSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionSortTests.swift; sourceTree = "<group>"; };
 		C64F62372C7A1CBD00B428A3 /* SelectionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionSort.swift; sourceTree = "<group>"; };
+		C64F62392C7BB3C600B428A3 /* RecursionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecursionTests.swift; sourceTree = "<group>"; };
 		C6529A322C7124DA00385B11 /* Triangular_treasure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Triangular_treasure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6529A3C2C7124DB00385B11 /* Triangular-treasureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Triangular-treasureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6529A4C2C7125BC00385B11 /* TriangularTreasureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangularTreasureTests.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				C6529A602C77DA5000385B11 /* PlayingwithdigitTests.swift */,
 				C64F622D2C791C7C00B428A3 /* BinarySearchTests.swift */,
 				C64F62352C7A0D4B00B428A3 /* SelectionSortTests.swift */,
+				C64F62392C7BB3C600B428A3 /* RecursionTests.swift */,
 			);
 			path = "Triangular-treasureTests";
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				C6529A5F2C7691BA00385B11 /* CenturyTests.swift in Sources */,
 				C64F62362C7A0D4B00B428A3 /* SelectionSortTests.swift in Sources */,
 				C6529A612C77DA5000385B11 /* PlayingwithdigitTests.swift in Sources */,
+				C64F623A2C7BB3C600B428A3 /* RecursionTests.swift in Sources */,
 				C6529A592C75458500385B11 /* FactorialTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,6 +25,8 @@ final class HashTablesTests: XCTestCase {
     func test_checkVoter_returnsTrueIfPersonHasNotVotedYet() {
         let sut = HashTables()
         XCTAssertEqual(sut.checkVoter("Doe"), "Let Doe vote!")
+        XCTAssertEqual(sut.checkVoter("mike"), "Let mike vote!")
+        XCTAssertEqual(sut.checkVoter("mike"), "Kick them out!")
         
     }
 

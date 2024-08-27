@@ -6,30 +6,110 @@
 //
 
 import XCTest
+import Foundation
+
+// As I can see Swift doesn't have Queue default implementation, so we have to use custom on, Degue structure from Swift Algorithm Club
+// https://github.com/raywenderlich/swift-algorithm-club/tree/master/Deque
+public struct Deque<T> {
+    private var array = [T]()
+    
+    public var isEmpty: Bool {
+        return array.isEmpty
+    }
+    
+    public var count: Int {
+        return array.count
+    }
+    
+    public mutating func enqueue(_ element: T) {
+        array.append(element)
+    }
+    
+    public mutating func enqueueFront(_ element: T) {
+        array.insert(element, at: 0)
+    }
+    
+    public mutating func dequeue() -> T? {
+        if isEmpty {
+            return nil
+        } else {
+            return array.removeFirst()
+        }
+    }
+    
+    public mutating func dequeueBack() -> T? {
+        if isEmpty {
+            return nil
+        } else {
+            return array.removeLast()
+        }
+    }
+    
+    public func peekFront() -> T? {
+        return array.first
+    }
+    
+    public func peekBack() -> T? {
+        return array.last
+    }
+    
+    func persionIsSeller(name: String) -> Bool {
+        return name.last == "m"
+    }
+    
+    func createGraph() -> [String: [String]] {
+        var graph = [String: [String]]()
+        graph["you"] = ["alice", "bob", "claire"]
+        
+        graph["you"] = ["alice", "bob", "claire"]
+        graph["bob"] = ["anuj", "peggy"]
+        graph["alice"] = ["peggy"]
+        graph["claire"] = ["thom", "jonny"]
+        graph["anuj"] = []
+        graph["peggy"] = []
+        graph["thom"] = []
+        graph["jonny"] = []
+        
+        return graph
+    }
+    
+    func search(name: String) -> Bool {
+        var searchQueue = Deque<String>()
+        //Swift Note: Our custom Deque doesn't have possibility to add new element as array so we have to add elements one by one (insted of +=graph["person"] in the book example)
+        let graph = createGraph()
+        
+        for string in graph[name]! {
+            searchQueue.enqueue(string)
+        }
+        // This array is how you keep track of which people you've searched before.
+        var searched = [String]()
+        while !searchQueue.isEmpty {
+            let person = searchQueue.dequeue()
+            // Only search this person if you haven't already searched them
+            if !searched.contains(person!) {
+                if persionIsSeller(name: person!) {
+                    print("\(person!) is a mango seller!")
+                    return true
+                } else {
+                    for string in graph[person!]! {
+                        searchQueue.enqueue(string)
+                    }
+                    // Marks this person as searched
+                    searched.append(person!)
+                }
+            }
+        }
+        
+        return false
+    }
+}
+
+
+
 
 final class BreadthFirstSearchTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func test() {
+        
     }
 
 }

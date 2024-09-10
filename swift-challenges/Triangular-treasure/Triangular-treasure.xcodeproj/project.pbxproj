@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C63031CE2C87726A002D2D3E /* MinMaxElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63031CD2C87726A002D2D3E /* MinMaxElementTests.swift */; };
+		C63031D02C879269002D2D3E /* MinMaxValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63031CF2C879269002D2D3E /* MinMaxValueTests.swift */; };
+		C63031D22C8797CB002D2D3E /* MinMaxValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63031D12C8797CB002D2D3E /* MinMaxValue.swift */; };
+		C63031D42C8797F7002D2D3E /* MinMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63031D32C8797F7002D2D3E /* MinMax.swift */; };
 		C6331CF82C7D200800B38CB8 /* HashTablesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6331CF72C7D200800B38CB8 /* HashTablesTests.swift */; };
 		C6331CFA2C7DE0E500B38CB8 /* BreadthFirstSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6331CF92C7DE0E500B38CB8 /* BreadthFirstSearchTests.swift */; };
 		C6331CFC2C7E27D400B38CB8 /* SmallestCodeIntepreterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6331CFB2C7E27D400B38CB8 /* SmallestCodeIntepreterTests.swift */; };
@@ -46,6 +49,9 @@
 
 /* Begin PBXFileReference section */
 		C63031CD2C87726A002D2D3E /* MinMaxElementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinMaxElementTests.swift; sourceTree = "<group>"; };
+		C63031CF2C879269002D2D3E /* MinMaxValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinMaxValueTests.swift; sourceTree = "<group>"; };
+		C63031D12C8797CB002D2D3E /* MinMaxValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinMaxValue.swift; sourceTree = "<group>"; };
+		C63031D32C8797F7002D2D3E /* MinMax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinMax.swift; sourceTree = "<group>"; };
 		C6331CF72C7D200800B38CB8 /* HashTablesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTablesTests.swift; sourceTree = "<group>"; };
 		C6331CF92C7DE0E500B38CB8 /* BreadthFirstSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadthFirstSearchTests.swift; sourceTree = "<group>"; };
 		C6331CFB2C7E27D400B38CB8 /* SmallestCodeIntepreterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallestCodeIntepreterTests.swift; sourceTree = "<group>"; };
@@ -133,6 +139,8 @@
 				C64F62372C7A1CBD00B428A3 /* SelectionSort.swift */,
 				C64F623B2C7BB74F00B428A3 /* Recursion.swift */,
 				C64F623D2C7BB7F900B428A3 /* Factorial.swift */,
+				C63031D12C8797CB002D2D3E /* MinMaxValue.swift */,
+				C63031D32C8797F7002D2D3E /* MinMax.swift */,
 			);
 			path = "Triangular-treasure";
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 				C6331CF92C7DE0E500B38CB8 /* BreadthFirstSearchTests.swift */,
 				C6331CFB2C7E27D400B38CB8 /* SmallestCodeIntepreterTests.swift */,
 				C63031CD2C87726A002D2D3E /* MinMaxElementTests.swift */,
+				C63031CF2C879269002D2D3E /* MinMaxValueTests.swift */,
 			);
 			path = "Triangular-treasureTests";
 			sourceTree = "<group>";
@@ -269,6 +278,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6529A652C77E32300385B11 /* Century.swift in Sources */,
+				C63031D42C8797F7002D2D3E /* MinMax.swift in Sources */,
+				C63031D22C8797CB002D2D3E /* MinMaxValue.swift in Sources */,
 				C6529A4F2C712D4F00385B11 /* TriangularTreasure.swift in Sources */,
 				C6529A5D2C7690FE00385B11 /* ShortestWord.swift in Sources */,
 				C64F623E2C7BB7F900B428A3 /* Factorial.swift in Sources */,
@@ -294,6 +305,7 @@
 				C63031CE2C87726A002D2D3E /* MinMaxElementTests.swift in Sources */,
 				C6529A5B2C7686C800385B11 /* ShortestWordTests.swift in Sources */,
 				C6529A5F2C7691BA00385B11 /* CenturyTests.swift in Sources */,
+				C63031D02C879269002D2D3E /* MinMaxValueTests.swift in Sources */,
 				C64F62362C7A0D4B00B428A3 /* SelectionSortTests.swift in Sources */,
 				C6529A612C77DA5000385B11 /* PlayingwithdigitTests.swift in Sources */,
 				C64F623A2C7BB3C600B428A3 /* RecursionTests.swift in Sources */,

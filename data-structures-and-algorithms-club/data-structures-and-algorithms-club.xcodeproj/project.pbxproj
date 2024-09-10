@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C6F829682C90387700926991 /* data_structures_and_algorithms_club.docc in Sources */ = {isa = PBXBuildFile; fileRef = C6F829672C90387700926991 /* data_structures_and_algorithms_club.docc */; };
 		C6F8296E2C90387700926991 /* data_structures_and_algorithms_club.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F829632C90387600926991 /* data_structures_and_algorithms_club.framework */; };
-		C6F829732C90387700926991 /* data_structures_and_algorithms_clubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F829722C90387700926991 /* data_structures_and_algorithms_clubTests.swift */; };
-		C6F829742C90387700926991 /* data_structures_and_algorithms_club.h in Headers */ = {isa = PBXBuildFile; fileRef = C6F829662C90387600926991 /* data_structures_and_algorithms_club.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,10 +22,7 @@
 
 /* Begin PBXFileReference section */
 		C6F829632C90387600926991 /* data_structures_and_algorithms_club.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = data_structures_and_algorithms_club.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6F829662C90387600926991 /* data_structures_and_algorithms_club.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = data_structures_and_algorithms_club.h; sourceTree = "<group>"; };
-		C6F829672C90387700926991 /* data_structures_and_algorithms_club.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = data_structures_and_algorithms_club.docc; sourceTree = "<group>"; };
 		C6F8296D2C90387700926991 /* data-structures-and-algorithms-clubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "data-structures-and-algorithms-clubTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6F829722C90387700926991 /* data_structures_and_algorithms_clubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data_structures_and_algorithms_clubTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +65,6 @@
 		C6F829652C90387600926991 /* data-structures-and-algorithms-club */ = {
 			isa = PBXGroup;
 			children = (
-				C6F829662C90387600926991 /* data_structures_and_algorithms_club.h */,
-				C6F829672C90387700926991 /* data_structures_and_algorithms_club.docc */,
 			);
 			path = "data-structures-and-algorithms-club";
 			sourceTree = "<group>";
@@ -80,7 +72,6 @@
 		C6F829712C90387700926991 /* data-structures-and-algorithms-clubTests */ = {
 			isa = PBXGroup;
 			children = (
-				C6F829722C90387700926991 /* data_structures_and_algorithms_clubTests.swift */,
 			);
 			path = "data-structures-and-algorithms-clubTests";
 			sourceTree = "<group>";
@@ -92,7 +83,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6F829742C90387700926991 /* data_structures_and_algorithms_club.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +184,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6F829682C90387700926991 /* data_structures_and_algorithms_club.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +191,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6F829732C90387700926991 /* data_structures_and_algorithms_clubTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

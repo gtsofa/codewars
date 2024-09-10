@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C6F8296E2C90387700926991 /* data_structures_and_algorithms_club.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F829632C90387600926991 /* data_structures_and_algorithms_club.framework */; };
+		C6F8297E2C903EB800926991 /* StringMovesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F8297D2C903EB800926991 /* StringMovesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		C6F829632C90387600926991 /* data_structures_and_algorithms_club.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = data_structures_and_algorithms_club.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F8296D2C90387700926991 /* data-structures-and-algorithms-clubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "data-structures-and-algorithms-clubTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6F8297D2C903EB800926991 /* StringMovesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMovesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		C6F829712C90387700926991 /* data-structures-and-algorithms-clubTests */ = {
 			isa = PBXGroup;
 			children = (
+				C6F8297D2C903EB800926991 /* StringMovesTests.swift */,
 			);
 			path = "data-structures-and-algorithms-clubTests";
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 					};
 					C6F8296C2C90387700926991 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -191,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F8297E2C903EB800926991 /* StringMovesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +397,7 @@
 		C6F8297B2C90387700926991 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -399,6 +405,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "gtsofa.com.data-structures-and-algorithms-clubTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -406,6 +413,7 @@
 		C6F8297C2C90387700926991 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

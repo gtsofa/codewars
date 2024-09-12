@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6231B412C9319AE000DD3E3 /* MinimumDeletionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6231B402C9319AE000DD3E3 /* MinimumDeletionTests.swift */; };
 		C6F8296E2C90387700926991 /* data_structures_and_algorithms_club.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F829632C90387600926991 /* data_structures_and_algorithms_club.framework */; };
 		C6F8297E2C903EB800926991 /* StringMovesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F8297D2C903EB800926991 /* StringMovesTests.swift */; };
 /* End PBXBuildFile section */
@@ -22,6 +23,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C6231B402C9319AE000DD3E3 /* MinimumDeletionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumDeletionTests.swift; sourceTree = "<group>"; };
 		C6F829632C90387600926991 /* data_structures_and_algorithms_club.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = data_structures_and_algorithms_club.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F8296D2C90387700926991 /* data-structures-and-algorithms-clubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "data-structures-and-algorithms-clubTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F8297D2C903EB800926991 /* StringMovesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMovesTests.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				C6F8297D2C903EB800926991 /* StringMovesTests.swift */,
+				C6231B402C9319AE000DD3E3 /* MinimumDeletionTests.swift */,
 			);
 			path = "data-structures-and-algorithms-clubTests";
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6231B412C9319AE000DD3E3 /* MinimumDeletionTests.swift in Sources */,
 				C6F8297E2C903EB800926991 /* StringMovesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

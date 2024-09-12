@@ -31,7 +31,16 @@ final class MinimumDeletionTests: XCTestCase {
     func test_minDeletion_returnsCorrectNumberOfLetterDeletionsInAString() {
         let sut = MinimumDeletion()
         
-        XCTAssertEqual(sut.minDeletion("aaa"), 1)
+        let case0 = sut.minDeletion("aaa")
+        let case1 = sut.minDeletion("acbcbba")
+        let case2 = sut.minDeletion("axxaxa")
+        let case3 = sut.minDeletion("aaaa")
+        
+        XCTAssertEqual(case0, 1)
+        XCTAssertEqual(case1, 1)
+        XCTAssertEqual(case2, 2)
+        XCTAssertEqual(case3, 0)
+        
     }
 
 }

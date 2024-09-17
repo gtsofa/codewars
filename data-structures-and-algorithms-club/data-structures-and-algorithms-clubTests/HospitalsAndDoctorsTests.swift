@@ -7,29 +7,44 @@
 
 import XCTest
 
-final class HospitalsAndDoctorsTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+struct HospitalsAndDoctors {
+    func doctorInHospital(_ rosterArray: [[Int]]) -> Int {
+        var doctorHospitalRatio: [Int: Set<Int>] = [:]
+        
+        let totalHospitals = rosterArray.count
+        let totalDoctorDays = rosterArray[0].count
+        
+        
+        for hospital in 0..<totalHospitals {
+            for day in 0..<totalDoctorDays {
+                let doctor = rosterArray[hospital][day]
+                
+                if doctorHospitalRatio[doctor] == nil {
+                    doctorHospitalRatio[doctor] = Set<Int>()
+                }
+                
+                doctorHospitalRatio[doctor]?.insert(hospital)
+            }
         }
+        
+        var hospitalCount = 0
+        
+        for (_, hospitals) in doctorHospitalRatio {
+            if hospitals.count > 1 {
+                hospitalCount += 1
+            }
+        }
+        return hospitalCount
+    }
+}
+
+final class HospitalsAndDoctorsTests: XCTestCase {
+    func test_doctorInHospital_returnsCorrectNumberOfDoctorInHospital() {
+        let sut = HospitalsAndDoctors()
+        
+        let case0 = sut.doctorInHospital([[1, 2, 2], [3, 1, 4]])
+        
+        XCTAssertEqual(case0, 1)
     }
 
 }

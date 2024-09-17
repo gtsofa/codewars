@@ -10,6 +10,7 @@
 		C6231B412C9319AE000DD3E3 /* MinimumDeletionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6231B402C9319AE000DD3E3 /* MinimumDeletionTests.swift */; };
 		C6231B432C93209D000DD3E3 /* MinimumDeletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6231B422C93209D000DD3E3 /* MinimumDeletion.swift */; };
 		C6231B452C93215F000DD3E3 /* StringMoves.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6231B442C93215F000DD3E3 /* StringMoves.swift */; };
+		C6C996012C99DC3B00BFAD30 /* HospitalsAndDoctorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C996002C99DC3B00BFAD30 /* HospitalsAndDoctorsTests.swift */; };
 		C6F8296E2C90387700926991 /* data_structures_and_algorithms_club.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F829632C90387600926991 /* data_structures_and_algorithms_club.framework */; };
 		C6F8297E2C903EB800926991 /* StringMovesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F8297D2C903EB800926991 /* StringMovesTests.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		C6231B402C9319AE000DD3E3 /* MinimumDeletionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumDeletionTests.swift; sourceTree = "<group>"; };
 		C6231B422C93209D000DD3E3 /* MinimumDeletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumDeletion.swift; sourceTree = "<group>"; };
 		C6231B442C93215F000DD3E3 /* StringMoves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMoves.swift; sourceTree = "<group>"; };
+		C6C996002C99DC3B00BFAD30 /* HospitalsAndDoctorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsAndDoctorsTests.swift; sourceTree = "<group>"; };
 		C6F829632C90387600926991 /* data_structures_and_algorithms_club.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = data_structures_and_algorithms_club.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F8296D2C90387700926991 /* data-structures-and-algorithms-clubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "data-structures-and-algorithms-clubTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F8297D2C903EB800926991 /* StringMovesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMovesTests.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			children = (
 				C6F8297D2C903EB800926991 /* StringMovesTests.swift */,
 				C6231B402C9319AE000DD3E3 /* MinimumDeletionTests.swift */,
+				C6C996002C99DC3B00BFAD30 /* HospitalsAndDoctorsTests.swift */,
 			);
 			path = "data-structures-and-algorithms-clubTests";
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			files = (
 				C6231B412C9319AE000DD3E3 /* MinimumDeletionTests.swift in Sources */,
 				C6F8297E2C903EB800926991 /* StringMovesTests.swift in Sources */,
+				C6C996012C99DC3B00BFAD30 /* HospitalsAndDoctorsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

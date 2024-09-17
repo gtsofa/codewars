@@ -43,8 +43,12 @@ final class HospitalsAndDoctorsTests: XCTestCase {
         let sut = HospitalsAndDoctors()
         
         let case0 = sut.doctorInHospital([[1, 2, 2], [3, 1, 4]])
+        let case1 = sut.doctorInHospital([ [1, 1, 5, 2, 3], [4, 5, 6, 4, 3], [9, 4, 4, 1, 5] ])
+        let case2 = sut.doctorInHospital( [ [4, 3], [5, 5], [6, 2] ])
         
         XCTAssertEqual(case0, 1)
+        XCTAssertEqual(case1, 4)
+        XCTAssertEqual(case2, 0)
     }
 
 }

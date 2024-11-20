@@ -21,6 +21,15 @@ class DoublyLinkedList:
 	def removeNodesWithValue(self, value):
 		# search for the given nodes; and then remove it
 		# use remove() and containsNodewithValues() methods.
+		node = self.head
+		# so long as node is not none i.e we are not at end of linkedlist
+		while node is not None:
+			nodeToRemove = node
+			node = node.next
+			if nodeToRemove.value == value:
+				self.remove(nodeToRemove)
+
+
 
 	def remove(self, node):
 		# check if we are dealing with head/tail of the linkedlist

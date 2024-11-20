@@ -13,8 +13,24 @@ class DoublyLinkedList:
 		pass
 
 	def insertAfter(self, node, nodeToInsert):
-		pass
+		# check if linkedlist has 1 node i.e nothing to insert
+		if nodeToInsert == self.head and nodeToInsert == self.tail
+		return
+		# remove node if it's in the linkedlist
+		self.remove(nodeToInsert)
+		# updates the nodes bindings
+		nodeToInsert.prev = node.prev
+		nodeToInsert.next = node
+		# updates bindings of the sorounding nodes
+		if node.prev is None:
+			# we are inserting b4 head so update the head
+			self.head = nodeToInsert
+		# otherwise if we don't have a prev value in prev node
+		else:
+			node.prev.next = nodeToInsert
 
+		node.prev = nodeToInsert
+				
 	def insertAtPosition(self, position, nodeToInsert):
 		pass
 

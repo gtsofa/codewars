@@ -19,8 +19,8 @@ class Node<T> {
 }
 
 class DoublyLinkedList<T> {
-    private let head: Node<T>?
-    private let tail: Node<T>?
+    private let head: Node<T>? = nil
+    private let tail: Node<T>? = nil
     
     init(head: Node<T>, tail: Node<T>) {
         self.head = head
@@ -34,7 +34,9 @@ class DoublyLinkedList<T> {
     func insertAtPosition(position: Node<T>, nodeToInsert: Node<T>) {}
     func removeNodeWithValue(value: Node<T>) {}
     func remove(node: Node<T>) {}
-    func containsNodeWithValue(node: Node<T>) {}
+    func containsNodeWithValue(node: Node<T>) {
+        
+    }
     
     
     

@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C65BFF012CE3731F00D1DE64 /* LinkedListConstruction.docc in Sources */ = {isa = PBXBuildFile; fileRef = C65BFF002CE3731F00D1DE64 /* LinkedListConstruction.docc */; };
 		C65BFF072CE3732000D1DE64 /* LinkedListConstruction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65BFEFC2CE3731F00D1DE64 /* LinkedListConstruction.framework */; };
-		C65BFF0C2CE3732000D1DE64 /* LinkedListConstructionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65BFF0B2CE3732000D1DE64 /* LinkedListConstructionTests.swift */; };
-		C65BFF0D2CE3732000D1DE64 /* LinkedListConstruction.h in Headers */ = {isa = PBXBuildFile; fileRef = C65BFEFF2CE3731F00D1DE64 /* LinkedListConstruction.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C65D0D842CEB739C004FBEB1 /* DoublyLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65D0D832CEB739C004FBEB1 /* DoublyLinkedListTests.swift */; };
+		C6FE113D2CF4C71200443594 /* DoublyLinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FE113C2CF4C71200443594 /* DoublyLinkedListNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,11 +23,8 @@
 
 /* Begin PBXFileReference section */
 		C65BFEFC2CE3731F00D1DE64 /* LinkedListConstruction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LinkedListConstruction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C65BFEFF2CE3731F00D1DE64 /* LinkedListConstruction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedListConstruction.h; sourceTree = "<group>"; };
-		C65BFF002CE3731F00D1DE64 /* LinkedListConstruction.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = LinkedListConstruction.docc; sourceTree = "<group>"; };
 		C65BFF062CE3732000D1DE64 /* LinkedListConstructionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedListConstructionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C65BFF0B2CE3732000D1DE64 /* LinkedListConstructionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListConstructionTests.swift; sourceTree = "<group>"; };
-		C65D0D832CEB739C004FBEB1 /* DoublyLinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedListTests.swift; sourceTree = "<group>"; };
+		C6FE113C2CF4C71200443594 /* DoublyLinkedListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedListNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +67,7 @@
 		C65BFEFE2CE3731F00D1DE64 /* LinkedListConstruction */ = {
 			isa = PBXGroup;
 			children = (
-				C65BFEFF2CE3731F00D1DE64 /* LinkedListConstruction.h */,
-				C65BFF002CE3731F00D1DE64 /* LinkedListConstruction.docc */,
+				C6FE113C2CF4C71200443594 /* DoublyLinkedListNode.swift */,
 			);
 			path = LinkedListConstruction;
 			sourceTree = "<group>";
@@ -82,8 +75,6 @@
 		C65BFF0A2CE3732000D1DE64 /* LinkedListConstructionTests */ = {
 			isa = PBXGroup;
 			children = (
-				C65BFF0B2CE3732000D1DE64 /* LinkedListConstructionTests.swift */,
-				C65D0D832CEB739C004FBEB1 /* DoublyLinkedListTests.swift */,
 			);
 			path = LinkedListConstructionTests;
 			sourceTree = "<group>";
@@ -95,7 +86,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C65BFF0D2CE3732000D1DE64 /* LinkedListConstruction.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C65BFF012CE3731F00D1DE64 /* LinkedListConstruction.docc in Sources */,
+				C6FE113D2CF4C71200443594 /* DoublyLinkedListNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,8 +195,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C65BFF0C2CE3732000D1DE64 /* LinkedListConstructionTests.swift in Sources */,
-				C65D0D842CEB739C004FBEB1 /* DoublyLinkedListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +396,7 @@
 		C65BFF142CE3732000D1DE64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -422,6 +411,7 @@
 		C65BFF152CE3732000D1DE64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

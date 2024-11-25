@@ -4,15 +4,19 @@ class DoublyLinkedList:
 		self.tail = None
 
 	def setHead(self, node):
-		pass
+		if self.head is None:
+			self.head = node
+			self.tail = node 
+			return 
+		self.insertBefore(self.head, node)
 
 	def setTail(self, node):
-		pass
+		if self.tail is None:
+			self.setHead(node)
+			return
+		self.insertAfter(self.tail, node)
 
 	def insertBefore(self, node, nodeToInsert):
-		pass
-
-	def insertAfter(self, node, nodeToInsert):
 		# check if linkedlist has 1 node i.e nothing to insert
 		if nodeToInsert == self.head and nodeToInsert == self.tail
 		return
@@ -30,9 +34,39 @@ class DoublyLinkedList:
 			node.prev.next = nodeToInsert
 
 		node.prev = nodeToInsert
+
+	def insertAfter(self, node, nodeToInsert):
+		# check if linkedlist has 1 node i.e nothing to insert
+		if nodeToInsert == self.head and nodeToInsert == self.tail
+		return
+		# remove node if it's in the linkedlist
+		self.remove(nodeToInsert)
+		nodeToInsert.prev = node
+		nodeToInsert.next = node.next 
+		# if we are dealing with the tail, overide the tail with nodetoinsert
+		if node.next is None:
+			self.tail = nodeToInsert
+
+		else:
+			# next node's tail should be nodetoinsert
+			nodex.next.prev = nodeToInsert
+		node.next = nodeToInsert
 				
 	def insertAtPosition(self, position, nodeToInsert):
-		pass
+		if position == 1:
+			self.setHead(nodeToInsert)
+			return
+		# start traversing the nodes.
+		node = self.head
+		currentPosition = 1
+		while node is not None and currentPosition != position:
+			node = node.next
+			currentPosition += 1
+		# we are not at the end of the node
+		if node is not None:
+			self.insertBefore(node, nodeToInsert)
+		# we are at the tail
+		self.setTail(nodeToInsert)
 
 	def removeNodesWithValue(self, value):
 		# search for the given nodes; and then remove it

@@ -3,6 +3,7 @@ class DoublyLinkedList:
 		self.head = None
 		self.tail = None
 
+	# 0(1) time | 0(1) space 
 	def setHead(self, node):
 		if self.head is None:
 			self.head = node
@@ -10,12 +11,14 @@ class DoublyLinkedList:
 			return 
 		self.insertBefore(self.head, node)
 
+	# 0(1) time | 0(1) space 
 	def setTail(self, node):
 		if self.tail is None:
 			self.setHead(node)
 			return
 		self.insertAfter(self.tail, node)
 
+	# 0(1) time | 0(1) space 
 	def insertBefore(self, node, nodeToInsert):
 		# check if linkedlist has 1 node i.e nothing to insert
 		if nodeToInsert == self.head and nodeToInsert == self.tail
@@ -35,6 +38,7 @@ class DoublyLinkedList:
 
 		node.prev = nodeToInsert
 
+	# 0(1) time | 0(1) space 
 	def insertAfter(self, node, nodeToInsert):
 		# check if linkedlist has 1 node i.e nothing to insert
 		if nodeToInsert == self.head and nodeToInsert == self.tail
@@ -51,7 +55,8 @@ class DoublyLinkedList:
 			# next node's tail should be nodetoinsert
 			nodex.next.prev = nodeToInsert
 		node.next = nodeToInsert
-				
+
+	# 0(p) time | 0(1) space i.e iterating through the entire list until postion `p`		
 	def insertAtPosition(self, position, nodeToInsert):
 		if position == 1:
 			self.setHead(nodeToInsert)
@@ -68,6 +73,7 @@ class DoublyLinkedList:
 		# we are at the tail
 		self.setTail(nodeToInsert)
 
+	# 0(n) time | 0(1) space 
 	def removeNodesWithValue(self, value):
 		# search for the given nodes; and then remove it
 		# use remove() and containsNodewithValues() methods.
@@ -80,7 +86,7 @@ class DoublyLinkedList:
 				self.remove(nodeToRemove)
 
 
-
+	# 0(1) time | 0(1) space 
 	def remove(self, node):
 		# check if we are dealing with head/tail of the linkedlist
 		if (node = self.head):
@@ -91,6 +97,7 @@ class DoublyLinkedList:
 
 		self.removeNodeBindings(node)
 
+	# 0(n) time | 0(1) space 
 	def containsNodeWithValue(self, value):
 		node = self.head
 		while node is not None and node.value != value:

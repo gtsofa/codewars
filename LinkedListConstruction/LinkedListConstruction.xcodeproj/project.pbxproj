@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C65BFF072CE3732000D1DE64 /* LinkedListConstruction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65BFEFC2CE3731F00D1DE64 /* LinkedListConstruction.framework */; };
+		C679736F2DAE4E1A008147EF /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679736E2DAE4E1A008147EF /* LinkedList.swift */; };
 		C6FE113D2CF4C71200443594 /* DoublyLinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FE113C2CF4C71200443594 /* DoublyLinkedListNode.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		C65BFEFC2CE3731F00D1DE64 /* LinkedListConstruction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LinkedListConstruction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C65BFF062CE3732000D1DE64 /* LinkedListConstructionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedListConstructionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C679736E2DAE4E1A008147EF /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		C6FE113C2CF4C71200443594 /* DoublyLinkedListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedListNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				C6FE113C2CF4C71200443594 /* DoublyLinkedListNode.swift */,
+				C679736E2DAE4E1A008147EF /* LinkedList.swift */,
 			);
 			path = LinkedListConstruction;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C679736F2DAE4E1A008147EF /* LinkedList.swift in Sources */,
 				C6FE113D2CF4C71200443594 /* DoublyLinkedListNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
